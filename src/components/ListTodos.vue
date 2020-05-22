@@ -42,6 +42,9 @@ export default {
         .then(res => {
           console.log(res);
           this.error = res.error;
+          // Note that we can't use the refreshApp function because
+          // it would update the Todo components, sending unnecessary
+          // PATCH requests
           window.location.reload(true);
         })
         .catch(console.error);
