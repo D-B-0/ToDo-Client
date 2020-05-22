@@ -44,10 +44,6 @@ input[type="text"] {
   height: 100%;
   padding: 0.25rem;
 
-  &.crossed {
-    text-decoration: line-through;
-  }
-
   &:focus {
     box-shadow: inset 0 0 0 0.15rem rgb(0, 182, 182);
   }

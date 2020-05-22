@@ -79,6 +79,11 @@ div {
 
 input[type="text"] {
   width: 70%;
+
+  &.crossed {
+    text-decoration: line-through;
+    filter: brightness(0.75);
+  }
 }
 
 button.x {
