@@ -16,6 +16,13 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,13 +41,15 @@ input[type="text"] {
   border: none;
   background-color: rgb(219, 219, 219);
   border-radius: 0.6rem;
+  height: 100%;
+  padding: 0.25rem;
 
   &.crossed {
     text-decoration: line-through;
   }
 
   &:focus {
-    border: 0.1rem solid rgb(0, 182, 182);
+    box-shadow: inset 0 0 0 0.15rem rgb(0, 182, 182);
   }
 }
 </style>
