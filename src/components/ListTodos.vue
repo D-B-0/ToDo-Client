@@ -42,7 +42,7 @@ export default {
         .then(res => {
           console.log(res);
           this.error = res.error;
-          this.refreshApp();
+          window.location.reload(true);
         })
         .catch(console.error);
     },
