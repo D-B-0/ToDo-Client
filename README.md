@@ -2,3 +2,4 @@
 
 ## TODO:
 - Dynamically get API url (maybe from .env?)
+- Fix the useless PATCH requests when the *refreshApp* function is called in the ListTodos component
