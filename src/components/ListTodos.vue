@@ -51,7 +51,7 @@ export default {
     }
   },
   created() {
-    fetch("http://localhost:8080/todo")
+    fetch(`${window.location.protocol}//${window.location.hostname}:8080/todo`)
       .then(res => res.json())
       .then(res => {
         this.todos = res.data;
